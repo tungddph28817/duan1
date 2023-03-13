@@ -1,42 +1,28 @@
 package com.example.tungg.molder;
 
 public class NhanVien {
-    private String maNV;
+    private int maNV;
     private String hoTen;
-    private String diaChi;
-    private String namSinh;
-    private String taiKhoan;
-    private String matKhau;
-    private String hinhAnh;
-    private String status;
-
-    public NhanVien(String maNV, String hoTen, String diaChi, String namSinh, String taiKhoan, String matKhau, String hinhAnh, String status) {
-        this.maNV = maNV;
-        this.hoTen = hoTen;
-        this.diaChi = diaChi;
-        this.namSinh = namSinh;
-        this.taiKhoan = taiKhoan;
-        this.matKhau = matKhau;
-        this.hinhAnh = hinhAnh;
-        this.status = status;
-    }
+    private String soDT;
+    private String chucDanh;
+    private String trangThai;
 
     public NhanVien() {
     }
 
-    public String getNamSinh() {
-        return namSinh;
+    public NhanVien(int maNV, String hoTen, String soDT, String chucDanh, String trangThai) {
+        this.maNV = maNV;
+        this.hoTen = hoTen;
+        this.soDT = soDT;
+        this.chucDanh = chucDanh;
+        this.trangThai = trangThai;
     }
 
-    public void setNamSinh(String namSinh) {
-        this.namSinh = namSinh;
-    }
-
-    public String getMaNV() {
+    public int getMaNV() {
         return maNV;
     }
 
-    public void setMaNV(String maNV) {
+    public void setMaNV(int maNV) {
         this.maNV = maNV;
     }
 
@@ -48,43 +34,27 @@ public class NhanVien {
         this.hoTen = hoTen;
     }
 
-    public String getDiaChi() {
-        return diaChi;
+    public String getSoDT() {
+        return soDT;
     }
 
-    public void setDiaChi(String diaChi) {
-        this.diaChi = diaChi;
+    public void setSoDT(String soDT) {
+        this.soDT = soDT;
     }
 
-    public String getTaiKhoan() {
-        return taiKhoan;
+    public String getChucDanh() {
+        return chucDanh;
     }
 
-    public void setTaiKhoan(String taiKhoan) {
-        this.taiKhoan = taiKhoan;
+    public void setChucDanh(String chucDanh) {
+        this.chucDanh = chucDanh;
     }
 
-    public String getMatKhau() {
-        return matKhau;
+    public String getTrangThai() {
+        return trangThai;
     }
 
-    public void setMatKhau(String matKhau) {
-        this.matKhau = matKhau;
-    }
-
-    public String getHinhAnh() {
-        return hinhAnh;
-    }
-
-    public void setHinhAnh(String hinhAnh) {
-        this.hinhAnh = hinhAnh;
-    }
-
-    public String getStatus() {
-        return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
+    public void setTrangThai(String trangThai) {
+        this.trangThai = trangThai;
     }
 }
